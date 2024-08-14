@@ -1,4 +1,4 @@
-import { deleteItenCart } from "./cart.js";
+import { deleteItemCart } from "./cart.js";
 import { cart } from "../index.js";
 
 //! Caso de uso 
@@ -23,7 +23,7 @@ class CreateItem {
         if (this.quantity > 1) {
             this.quantity --
         }else if(this.quantity = 1){
-            deleteItenCart(cart, this.name);
+            deleteItemCart(cart, this.name);
         }
     }
 };

@@ -1,6 +1,6 @@
 //! Caso de uso 
 // Adicionar item no carrinho
-async function  addItenCart(userCart,iten) {
+async function  addItemCart(userCart,iten) {
     userCart.push(iten);
 }
 
@@ -11,7 +11,7 @@ async function valueTotalItens(userCart) {
 }
 
 // Remover item do carrinho
-async function  deleteItenCart(userCart, iten) {
+async function  deleteItemCart(userCart, iten) {
     const index = userCart.findIndex((item)=> item.name === iten);
 
     if (index !== -1){
@@ -28,9 +28,9 @@ async function displayCart(userCart){
 }
 
 export {
-    addItenCart,
+    addItemCart,
     valueTotalItens,
-    deleteItenCart,
+    deleteItemCart,
     displayCart,
 
 }

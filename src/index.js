@@ -5,22 +5,22 @@ const cart = [];
 
 console.log("Bem vindo ao seu carinho da shoppe !!!");
 
-const intem1 = new CreateItem("Monitor", 700.00, 3);
-const intem2 = new CreateItem("Mouse", 80.00, 2);
+const item1 = new CreateItem("Monitor", 700.00, 3);
+const item2 = new CreateItem("Mouse", 80.00, 2);
 
-await cartSev.addItenCart(cart, intem1);
-await cartSev.addItenCart(cart, intem2);
+await cartSev.addItemCart(cart, item1);
+await cartSev.addItemCart(cart, item2);
 
-intem1.removeOneItem()
-intem1.removeOneItem()
-intem1.removeOneItem()
-intem1.removeOneItem()
-intem2.addOneItem()
-intem2.addOneItem()
-intem2.addOneItem()
+item1.removeOneItem()
+item1.removeOneItem()
+item1.removeOneItem()
+item1.removeOneItem()
+item2.addOneItem()
+item2.addOneItem()
+item2.addOneItem()
 
 
-//await cartSev.deleteItenCart(cart, intem1.name);
+//await cartSev.deleteItenCart(cart, item1.name);
 
 await cartSev.displayCart(cart)
 await cartSev.valueTotalItens(cart);
